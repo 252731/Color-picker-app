@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <!-----Boxicons Library------>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-----Boxicons Library------>
+    <link rel="stylesheet" href="index.css">
+    <!-----Fonts------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Roboto:wght@400;900&family=Smythe&family=Source+Sans+3:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>THE <span>COLOR</span> API</h1>
+        <div class="buttons">
+            <button id="get-color">Get Color Scheme</button>
+            <label for="favcolor"></label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+            <select id="dropdown" class="dropdown-content">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogous">Analogous</option>
+                <option value="complementary">Complementary</option>
+                <option value="analogic-complimentary">Analogic-complimentary</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+        </div>
+        <main>
+            <div id="palleteContainer"></div>
+            <div id="hexContainer"></div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
